@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+body {
+    background-color: #11100E;
+    color: white;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.FirstSee {
+    margin: 0;
+    z-index: 4;
+}
+
+.Introduction {
+    margin: auto;
+    width: 50%;
+    /*border: 3px solid green; */
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.name::before {
+    content: "<!-- Note: Website Is Not Actually Written In python !-->";
+    font-size: 16px;
+    color: #23211D;
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.name {
+    font-size: 32px;
+    text-align: center;
+    animation: showup 2s;
+    transition: all 0.3s ease 0s;
+    z-index: 1;
+}
+
+.name::after {
+    content: ".py";
+}
+
+.undername {
+    opacity: 0;
+    font-size: 16px;
+    animation: showup 2s forwards 2s;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    z-index: 2;
+    font-weight: 200;
+}
+
+fox {
+    color: #F9564F;
+}
+
+.btn {
+    position: absolute;
+    opacity: 0;
+    font-size: 16px;
+    animation: showup 2s forwards 4s;
+    transition: all 0.3s ease 0s;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 50px;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.btn:hover {
+    color: #F9564F;
+    border: 2px solid #F9564F;
+}
+
+.btnno1 {
+    position: absolute;
+    font-size: 16px;
+    transition: all 0.3s ease 0s;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 50px;
+    top: 77%;
+    left: 45%;
+    transform: translate(-50%, -50%)
+}
+.btnno1:hover {
+    color: #F9564F;
+    border: 2px solid #F9564F;
+}
+
+.btnno2 {
+    position: absolute;
+    font-size: 16px;
+    transition: all 0.3s ease 0s;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 50px;
+    top: 77%;
+    left: 55%;
+    transform: translate(-50%, -50%)
+}
+.btnno2:hover {
+    color: #F9564F;
+    border: 2px solid #F9564F;
+}
+
+@keyframes showup {
+    0%
+    {
+        opacity: 0;
+    }
+
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+#more {
+    background: #1C1A17;
+    position: absolute;
+    top: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.custom-shape-divider-top-1669818841 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 105%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 2;
+}
+
+.custom-shape-divider-top-1669818841 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1669818841 .shape-fill {
+    fill: #11100E;
+}
+
+.Created {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.Undercreated {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    text-align: center;
+}
